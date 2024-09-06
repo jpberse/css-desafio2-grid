@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: aquamarine;
+}
+
+.main {
+    grid-area: main;
+    background-color: blue;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: brown;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "nav main"
+        "footer footer";
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    min-height: 100vh;
+}
