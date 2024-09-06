@@ -2,26 +2,59 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Reddit Sans Condensed", sans-serif;
 }
 
 .header {
     grid-area: header;
-    background-color: aqua;
+    background-color: #495464;
+}
+
+.header h1 {
+    text-align: center;
+    padding-top: 0.7em;
+    font-weight: bold;
+    color: #E8E8E8;
 }
 
 .nav {
     grid-area: nav;
-    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 1em 4em; 
+    background-color: #ffffffc0;
+    color: #495464
+}
+
+.nav h2 {
+    margin-bottom: 1em;
+}
+
+.category-item {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.category-item span:nth-child(2) {
+    color: #cccccc;
+    padding-left: 0.3em;
 }
 
 .main {
     grid-area: main;
-    background-color: blue;
+    background-color: #ffffffc0;
 }
 
 .footer {
     grid-area: footer;
-    background-color: brown;
+    background-color: #BBBFCA;
+}
+
+.footer h3 {
+    text-align: center;
+    color: #495464;
+    padding-top: 1.5em;
 }
 
 .grid-container {
