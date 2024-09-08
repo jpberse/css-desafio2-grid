@@ -44,9 +44,8 @@
 .main {
     grid-area: main;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    justify-items: center;
-    gap: 10px;
+    grid-template-columns: repeat(4,23%);
+    padding-top: 1em;
     background-color: #dcdcdcc0;
 }
 
@@ -54,22 +53,53 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
     width: 340px;
-    padding-bottom: 1em;
+    margin-bottom: 20px;
     background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0 0 0 / 30%);
 }
 
 .card-product img {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    margin-bottom: 0.5em;
+}
+
+.card-product span {
+    padding: 0.5em 0;
+    font-size: 20px;
 }
 
 .card-product button {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 100;
     width: 100%;
+    height: 56px;
     border: none;
     text-decoration: none;
+    transition: all .35s;
+}
+
+.card-product button:after {
+    content: '»';
+    opacity: 0; 
+    padding-left: 5px;
+    transition: 0.5s;
+}
+
+.card-product button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+}
+
+.card-product button:hover:after {
+    opacity: 1;
+    right: 10px;
 }
 
 .footer {
